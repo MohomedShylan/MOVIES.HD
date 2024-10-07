@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOVIES</title>
+    
+    <link rel="stylesheet" href="CSS/Movie 02.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link href="Navigation.html">
+
+    <!-- Import font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.1.0/swiper-bundle.min.js">
+
+</head>
+<body>
+
+
+    <!-- Navigation-->
+    <nav class="navigation">
+        <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label for="menu-btn" class="menu-icon">
+            <span class="nav-icon"></span>
+        </label>
+
+        <!-- Logo-->
+        <a href="" class="logo">
+            Movies<span>.hd</span>
+        </a>
+         <!--manu-->
+         <ul class="menu">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="">Genre</a></li>
+            <li><a href="TV Series.html">TV Series</a></li>
+            <li><a href="Movie.html">Movies</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>  
+         <!-- Search box-->
+         <form action="" class="search-box">
+            <input type="text" name="search" placeholder="Search Movie" class="search-input" required>
+            <button type="submit"><i class='bx bx-search' ></i></button>
+        </form>
+    </nav>
+ <!--movie- banner-->
+ <section class="movie-banner">
+    <!--img-->
+    <div class="m-banner-img">
+        <img src="image/New folder/2.webp">
+    </div>
+    <div class="m-banner-img">
+        <img src="image/New folder/3.jpg">
+    </div>
+    <div class="m-banner-img">
+        <img src="image/New folder/3.webp">
+    </div>
+    <div class="m-banner-img">
+        <img src="image/New folder/4.jpg">
+    </div>
+    <div class="m-banner-img">
+        <img src="image/New folder/5.webp">
+    </div>
+    <div class="banner-container">
+        <div class="title-container">
+            <div class="title-top">
+            <div class="movie-title">
+                <h1>The Witcher(Tv Series) - Season 03</h1>
+            </div>
+            <div class="more-about-movie">
+                <span class="quality">Full HD</span>
+                <div class="ratting">
+                    Ratting - 8.2(IMDB)
+                </div>
+                <span>July 2023</span>
+            </div>
+            <div class="language">
+                <span>English</span>
+            </div>
+            </div>
+
+            <div class="title-bottom">
+                <div class="category">
+                    <strong>Category</strong><br>
+                    <a href="">Horror,</a><a href="">Adventure,</a><a href="">Action</a>
+                </div>
+                <a href="https://youtu.be/NXgNtafDWeY?t=1" class="watch-btn">Watch Trailer</a>
+            </div>
+        </div>
+            <div class="play-btn-container">
+                <div class="play-btn">
+                    <a herf="https://youtu.be/NXgNtafDWeY?t=1">
+                        <i class='bx bx-play-circle'></i>
+                    </a>
+                </div>
+            </div>
+    </div>
+</section>
+<script>
+    
+let slideIndex = 0;
+    showSlides();
+
+function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("m-banner-img");
+        for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+
+</script>
+
+<section class="movie-details">
+<strong>The Witcher - Season 03</strong>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum iusto qui blanditiis odio aliquid iure similique consequuntur perferendis delectus eos.</p>
+</section>
+
+<section class="screenshots">
+<strong>Screenshots</strong>
+<div class="ss-container">
+    <img src="image/New folder/6.jpg">
+    <img src="image/New folder/7.jpg">
+    <img src="image/New folder/8.jpg">
+    <img src="image/New folder/9.webp">
+</div>
+</section>
+
+<!--download-->
+<section class="download-movie">
+<div class="download-container">
+    <div class="download-box">
+        <span><i class='bx bx-menu'></i>Servevr 1</span>
+        <span>English</span>
+        <span>480p</span>
+        <a href="">Download</a>
+    </div>
+    <div class="download-box">
+        <span><i class='bx bx-menu'></i>Servevr 2</span>
+        <span>English</span>
+        <span>720p</span>
+        <a href="">Download</a>
+    </div>
+    \<div class="download-box">
+        <span><i class='bx bx-menu'></i>Servevr 3</span>
+        <span>English</span>
+        <span>1080p</span>
+        <a href="">Download</a>
+    </div>
+</div>
+</section>
